@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="371" height="48.914" viewBox="0 0 371 48.914">
+  <g id="Group_97" data-name="Group 97" transform="translate(0 -177.085)">
+    <g id="Group_98" data-name="Group 98">
+      <g id="Group_99" data-name="Group 99">
+        <path id="Path_5" data-name="Path 5" d="M0,0H345l26,48.914H0Z" transform="translate(0 177.085)" fill="#fff"/>
+        <text id="性別" transform="translate(188 211)" fill="#272727" font-size="25" font-family="ShinGoPro-Medium, A-OTF Shin Go Pro" font-weight="500"><tspan x="0" y="0">性別</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
