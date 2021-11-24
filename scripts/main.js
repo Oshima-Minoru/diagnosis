@@ -239,9 +239,6 @@ $('input[name=quiz-weight]').change(function() {
 $('input[name=quiz-ideal-weight]').change(function() {
   $('.slick-next').show();
 });
-$('input[name=quiz-17]').change(function() {
-  // $('.slick-next').show();
-});
 $('input[name=quiz-20]').change(function() {
   $('.slick-next').hide();
   $('.evaluate-btn').show();
