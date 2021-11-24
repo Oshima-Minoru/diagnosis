@@ -114,7 +114,7 @@ img {
 }
 
 .top-page img {
-  width: 57%;
+  width: 80%;
 }
 
 .top-title {
@@ -209,13 +209,13 @@ img {
   z-index: 100;
 }
 .slick-next {
-  right: 5%;
+  right: 10%;
   top: 70%;
   z-index: 100;
 }
 .slick-prev:before, .slick-next:before {
   color: #0075ff;
-  font-size: 50px;
+  font-size: 70px;
 }
 .progress {
   top: 25vh;
@@ -277,10 +277,8 @@ img {
   justify-content: center;
   left: 0;
   top: calc(25vh - 50px);
-  /* bottom: -1px; */
   height: 50px;
   width: auto;
-  /* width: 370px; */
 }
 .banner img {
   height: 100%;
@@ -305,6 +303,20 @@ img {
   justify-content: space-around;
   margin: auto;
   flex-wrap: wrap;
+}
+textarea {
+  width: 100%;
+}
+.radio-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.radio-content input{
+  height: 35px;
+  margin-left: 0 !important;
+  margin-right: 20px;
 }
 .quiz-content .left-content {
   display: flex;

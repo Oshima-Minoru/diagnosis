@@ -154,17 +154,17 @@ function testValidate(curPage){
   }
   else if(curPage == 11)
   {
-    var ele1 = document.getElementsByName('quiz-old');
-    pageValue = ele1[0].value;
-  }
-  else if(curPage == 12)
-  {
-    var ele1 = document.getElementsByName('quiz-12');
+    var ele1 = document.getElementsByName('quiz-11');
     for(var i = 0; i < ele1.length; i++) {
         if(ele1[i].checked){
           pageValue = ele1[i].value;
         }
     }
+  }
+  else if(curPage == 12)
+  {
+    var ele1 = document.getElementsByName('quiz-old');
+    pageValue = ele1[0].value;
   }
   else if(curPage == 13)
   {
@@ -240,7 +240,7 @@ $('input[name=quiz-ideal-weight]').change(function() {
   $('.slick-next').show();
 });
 $('input[name=quiz-17]').change(function() {
-  $('.slick-next').show();
+  // $('.slick-next').show();
 });
 $('input[name=quiz-20]').change(function() {
   $('.slick-next').hide();
@@ -248,10 +248,20 @@ $('input[name=quiz-20]').change(function() {
 });
 
 function medicalChanged() {
-  $('.slick-next').show();
+  var ele1 = document.getElementsByName('quiz-medical');
+  var temp = ele1[0].value;
+  if(temp == "")
+    $('.slick-next').hide();
+  else
+    $('.slick-next').show();
 }
 function allergyChanged() {
-  $('.slick-next').show();
+  var ele1 = document.getElementsByName('quiz-allergy');
+  var temp = ele1[0].value;
+  if(temp == "")
+    $('.slick-next').hide();
+  else
+    $('.slick-next').show();
 }
 
 function startBtnClick() {
@@ -261,10 +271,24 @@ function startBtnClick() {
   $('.evaluate-btn').hide();
 }
 
-$(".quiz-content input[type=radio]").click(function(event){
+$(".quiz-content .next-radio").click(function(event){
+  var obj = event.target;
+  // $('.slick-next').show();
+  $('.slick-next').click();
+});
+$('#quiz-18-1').click(function(event){
+  var obj = event.target;
+  $( "#quiz-medical" ).prop( "disabled", false );
+});
+$('#quiz-19-1').click(function(event){
+  var obj = event.target;
+  $( "#quiz-allergy" ).prop( "disabled", false );
+});
+$(".quiz-content input[type=checkbox]").click(function(event){
   var obj = event.target;
   $('.slick-next').show();
 });
+
 
 $(".quiz-name").click(function(event){
   $('.slick-next').show();
@@ -280,7 +304,7 @@ function startDiagnosis() {
   var quiz_sex, quiz_weight, eval_weight, quiz_ideal_weight, eval_ideal_weight, quiz_length, eval_length, quiz_old, eval_old,
       quiz_breakfast, quiz_food, quiz_job, quiz_athletic, quiz_sleeptime, quiz_6, quiz_7, quiz_8, quiz_9;
 
-  var element = document.getElementsByName('quiz-12');
+  var element = document.getElementsByName('quiz-11');
   for(var i = 0; i < element.length; i++) {
       if(element[i].checked){
         quiz_sex = parseFloat(element[i].value);                          //sex
@@ -332,7 +356,7 @@ function startDiagnosis() {
   element = document.getElementsByName('quiz-2');
   for(var i = 0; i < element.length; i++) {
     if(element[i].checked){
-      quiz_food = parseFloat(element[i].value);                           //food
+      quiz_food += parseFloat(element[i].value);                           //food
     }
   }
 
