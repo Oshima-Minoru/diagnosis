@@ -301,6 +301,7 @@ function startDiagnosis() {
   var quiz_sex, quiz_weight, eval_weight, quiz_ideal_weight, eval_ideal_weight, quiz_length, eval_length, quiz_old, eval_old,
       quiz_breakfast, quiz_food, quiz_job, quiz_athletic, quiz_sleeptime, quiz_6, quiz_7, quiz_8, quiz_9;
 
+  quiz_food = 0;
   var element = document.getElementsByName('quiz-11');
   for(var i = 0; i < element.length; i++) {
       if(element[i].checked){
