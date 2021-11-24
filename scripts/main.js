@@ -13,12 +13,12 @@ $(document).ready(function() {
         // $('.slick-next').show();
         // $('.evaluate-btn').hide();
       }
-      else if (nextSlide > 0 && nextSlide < 19) {
+      else if (nextSlide > 0 && nextSlide < 20) {
         $('.slick-prev').show();
         // $('.slick-next').show();
         // $('.evaluate-btn').hide();
       }
-      else if (nextSlide == 19) {
+      else if (nextSlide == 20) {
         $('.slick-prev').show();
         $('.slick-next').hide();
         // $('.evaluate-btn').show();
@@ -38,7 +38,7 @@ $(document).ready(function() {
         $('.slick-next').hide();
       else {
         $('.slick-next').show();
-        if(nextSlide == 20)
+        if(nextSlide == 21)
         {
           $('.slick-prev').show();
           $('.slick-next').hide();
@@ -218,6 +218,15 @@ function testValidate(curPage){
         }
     }
   }
+  else if(curPage == 21)
+  {
+    var ele1 = document.getElementsByName('quiz-21');
+    for(var i = 0; i < ele1.length; i++) {
+        if(ele1[i].checked){
+          pageValue = ele1[i].value;
+        }
+    }
+  }
 
   return pageValue;
 }
@@ -239,7 +248,7 @@ $('input[name=quiz-weight]').change(function() {
 $('input[name=quiz-ideal-weight]').change(function() {
   $('.slick-next').show();
 });
-$('input[name=quiz-20]').change(function() {
+$('input[name=quiz-21]').change(function() {
   $('.slick-next').hide();
   $('.evaluate-btn').show();
 });

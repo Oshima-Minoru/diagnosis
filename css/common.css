@@ -253,6 +253,18 @@ img {
 .banner-attention {
   background-image: url(../img/banner-attention.jpg);
 }
+.banner-figure {
+  background-image: url(../img/baner-figure.jpg);
+}
+.banner-medical {
+  background-image: url(../img/banner-medical.jpg);
+}
+.banner-alergy {
+  background-image: url(../img/banner-alergy.jpg);
+}
+.banner-baby {
+  background-image: url(../img/banner-baby.jpg);
+}
 .banner-result {
   background-image: url(../img/banner-result.jpg);
 }
