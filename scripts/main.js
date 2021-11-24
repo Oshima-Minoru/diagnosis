@@ -201,26 +201,25 @@ function testValidate(curPage){
   }
   else if(curPage == 18)
   {
-    var ele1 = document.getElementsByName('quiz-medical');
-    pageValue = ele1[0].value;
-  }
-  else if(curPage == 19)
-  {
-    var ele1 = document.getElementsByName('quiz-allergy');
-    pageValue = ele1[0].value;
-  }
-  else if(curPage == 20)
-  {
-    var ele1 = document.getElementsByName('quiz-20');
+    var ele1 = document.getElementsByName('quiz-18');
     for(var i = 0; i < ele1.length; i++) {
         if(ele1[i].checked){
           pageValue = ele1[i].value;
         }
     }
   }
-  else if(curPage == 21)
+  else if(curPage == 19)
   {
-    var ele1 = document.getElementsByName('quiz-21');
+    var ele1 = document.getElementsByName('quiz-19');
+    for(var i = 0; i < ele1.length; i++) {
+        if(ele1[i].checked){
+          pageValue = ele1[i].value;
+        }
+    }
+  }
+  else if(curPage == 20)
+  {
+    var ele1 = document.getElementsByName('quiz-20');
     for(var i = 0; i < ele1.length; i++) {
         if(ele1[i].checked){
           pageValue = ele1[i].value;
