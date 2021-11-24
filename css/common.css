@@ -12,7 +12,7 @@ body {
   line-height: 2;
 }
 main {
-  max-height: 100vh;
+  /* max-height: 100vh; */
   overflow: hidden;
 }
 #wrap {
@@ -75,7 +75,7 @@ img {
   padding-top: 0;
 }
 .result-chart {
-  width: 30%;
+  width: 36%;
 }
 .result-explain {
   width: 50%;
