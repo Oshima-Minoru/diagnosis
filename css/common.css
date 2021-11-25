@@ -67,7 +67,15 @@ img {
   font-size: 14px;
   text-align: left;
 }
-
+.result-explain .attension-title {
+  color: #D96D00;
+  font-size: 12px;
+  text-align: center;
+}
+.result-explain .result-attension {
+  font-size: 10px;
+  text-align: left;
+}
 .top-page {
   position: fixed;
   top: 0;

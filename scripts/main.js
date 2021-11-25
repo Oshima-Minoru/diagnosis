@@ -251,7 +251,7 @@ $('input[name=quiz-length]').change(function() {
   if(tmp < 0)
   {
     $('input[name=quiz-length]').val(0);
-    alert("年齢を正確に入力してください。")
+    alert("身長を正確に入力してください。")
     $('.slick-next').hide();
   }
   else
@@ -267,7 +267,7 @@ $('input[name=quiz-weight]').change(function() {
   if(tmp < 0)
   {
     $('input[name=quiz-weight]').val(0);
-    alert("年齢を正確に入力してください。")
+    alert("体重を正確に入力してください。")
     $('.slick-next').hide();
   }
   else
@@ -283,7 +283,7 @@ $('input[name=quiz-ideal-weight]').change(function() {
   if(tmp < 0)
   {
     $('input[name=quiz-ideal-weight]').val(0);
-    alert("年齢を正確に入力してください。")
+    alert("理想とする体重を正確に入力してください。")
     $('.slick-next').hide();
   }
   else
@@ -364,6 +364,7 @@ $(".quiz-name").click(function(event){
 });
 
 function startDiagnosis() {
+  $('.progress').css("background-size", 100+"% " + 100 + "%");
   $('.slider').hide();
   $('.result-page').show();
   $('.evaluate-btn').hide();
