@@ -1,6 +1,5 @@
 "use strict";
-
-
+var max_page = 20;
 $(document).ready(function() {
     var $slider = $('.slider');
     var $progressBar = $('.progress');
@@ -10,18 +9,14 @@ $(document).ready(function() {
       var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
       if (nextSlide == 0) {
         $('.slick-prev').hide();
-        // $('.slick-next').show();
-        // $('.evaluate-btn').hide();
       }
-      else if (nextSlide > 0 && nextSlide < 20) {
+      else if (nextSlide > 0 && nextSlide < max_page) {
         $('.slick-prev').show();
-        // $('.slick-next').show();
-        // $('.evaluate-btn').hide();
       }
-      else if (nextSlide == 20) {
+      else if (nextSlide == max_page) {
         $('.slick-prev').show();
         $('.slick-next').hide();
-        // $('.evaluate-btn').show();
+        return;
       }
 
       var testPage = nextSlide;
@@ -38,11 +33,10 @@ $(document).ready(function() {
         $('.slick-next').hide();
       else {
         $('.slick-next').show();
-        if(nextSlide == 21)
+        if(nextSlide == max_page + 1)
         {
           $('.slick-prev').show();
           $('.slick-next').hide();
-          // $('.evaluate-btn').show();
         }
       }
 
@@ -236,21 +230,69 @@ $('input[name=quiz-name]').change(function() {
 });
 
 $('input[name=quiz-old]').change(function() {
-  $('.slick-next').show();
+  var element = document.getElementsByName('quiz-old');
+  var tmp = parseFloat(element[0].value);
+  if(tmp < 0)
+  {
+    $('input[name=quiz-old]').val(0);
+    alert("年齢を正確に入力してください。")
+    $('.slick-next').hide();
+  }
+  else
+  {
+    $('input[name=quiz-old]').val(tmp);
+    $('.slick-next').show();
+  }
 });
+
 $('input[name=quiz-length]').change(function() {
-  $('.slick-next').show();
+  var element = document.getElementsByName('quiz-length');
+  var tmp = parseFloat(element[0].value);
+  if(tmp < 0)
+  {
+    $('input[name=quiz-length]').val(0);
+    alert("年齢を正確に入力してください。")
+    $('.slick-next').hide();
+  }
+  else
+  {
+    $('input[name=quiz-length]').val(tmp);
+    $('.slick-next').show();
+  }
 });
+
 $('input[name=quiz-weight]').change(function() {
-  $('.slick-next').show();
+  var element = document.getElementsByName('quiz-weight');
+  var tmp = parseFloat(element[0].value);
+  if(tmp < 0)
+  {
+    $('input[name=quiz-weight]').val(0);
+    alert("年齢を正確に入力してください。")
+    $('.slick-next').hide();
+  }
+  else
+  {
+    $('input[name=quiz-weight]').val(tmp);
+    $('.slick-next').show();
+  }
 });
+
 $('input[name=quiz-ideal-weight]').change(function() {
-  $('.slick-next').show();
+  var element = document.getElementsByName('quiz-ideal-weight');
+  var tmp = parseFloat(element[0].value);
+  if(tmp < 0)
+  {
+    $('input[name=quiz-ideal-weight]').val(0);
+    alert("年齢を正確に入力してください。")
+    $('.slick-next').hide();
+  }
+  else
+  {
+    $('input[name=quiz-ideal-weight]').val(tmp);
+    $('.slick-next').show();
+  }
 });
-$('input[name=quiz-21]').change(function() {
-  $('.slick-next').hide();
-  $('.evaluate-btn').show();
-});
+
 
 function medicalChanged() {
   var ele1 = document.getElementsByName('quiz-medical');
@@ -261,12 +303,19 @@ function medicalChanged() {
     $('.slick-next').show();
 }
 function allergyChanged() {
-  var ele1 = document.getElementsByName('quiz-allergy');
-  var temp = ele1[0].value;
-  if(temp == "")
+  if(max_page == 18)
+  {
     $('.slick-next').hide();
-  else
-    $('.slick-next').show();
+    $('.evaluate-btn').show();  
+  }
+  else {
+    var ele1 = document.getElementsByName('quiz-allergy');
+    var temp = ele1[0].value;
+    if(temp == "")
+      $('.slick-next').hide();
+    else
+      $('.slick-next').show();  
+  }
 }
 
 function startBtnClick() {
@@ -277,20 +326,35 @@ function startBtnClick() {
 }
 
 $(".quiz-content .next-radio").click(function(event){
-  var obj = event.target;
-  // $('.slick-next').show();
+  // var obj = event.target;
   $('.slick-next').click();
 });
+$('#quiz-11-1').click(function(event){
+  max_page = 18;
+});
 $('#quiz-18-1').click(function(event){
-  var obj = event.target;
+  // var obj = event.target;
   $( "#quiz-medical" ).prop( "disabled", false );
 });
 $('#quiz-19-1').click(function(event){
-  var obj = event.target;
+  // var obj = event.target;
   $( "#quiz-allergy" ).prop( "disabled", false );
 });
+$('#quiz-19-2').click(function(event) {
+  if(max_page == 18) {
+    $('.slick-next').hide();
+    $('.evaluate-btn').show();  
+  }
+  else {
+    $('.slick-next').click();  
+  }
+});
+$('input[name=quiz-21]').change(function() {
+  $('.slick-next').hide();
+  $('.evaluate-btn').show();
+});
 $(".quiz-content input[type=checkbox]").click(function(event){
-  var obj = event.target;
+  // var obj = event.target;
   $('.slick-next').show();
 });
 
@@ -452,13 +516,24 @@ function startDiagnosis() {
   val_tmp = (quiz_6 + quiz_7 + quiz_8 + quiz_9) * 5;
   eval_body = (quiz_sleeptime - val_tmp) - eval_athletic/10;           //body
   
-  $('.result').val(result);
-  $('.protain').val(eval_protain);
-  $('.vitamin').val(eval_vitamin);
-  $('.gap').val(eval_gap);
-  $('.athletic').val(eval_athletic);
-  $('.body').val(eval_body);
+  // $('.result').val(result);
+  // $('.protain').val(eval_protain);
+  // $('.vitamin').val(eval_vitamin);
+  // $('.gap').val(eval_gap);
+  // $('.athletic').val(eval_athletic);
+  // $('.body').val(eval_body);
 
+  if(eval_protain > 100)
+    eval_protain = 100;
+  if(eval_athletic > 100)
+    eval_athletic = 100;
+  if(eval_vitamin > 100)
+    eval_vitamin = 100;
+  if(eval_body > 100)
+    eval_body = 100;
+  if(eval_gap > 100)
+    eval_gap = 100;
+    
   var user_name = document.getElementById("quiz-name").value;
   var ele = document.getElementsByName("username");
   for(var i = 0; i < ele.length; i++) {
