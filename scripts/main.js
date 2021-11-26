@@ -534,11 +534,39 @@ function startDiagnosis() {
     eval_body = 100;
   if(eval_gap > 100)
     eval_gap = 100;
-    
+
   var user_name = document.getElementById("quiz-name").value;
   var ele = document.getElementsByName("username");
   for(var i = 0; i < ele.length; i++) {
     ele[i].textContent = user_name;
+  }
+
+  var quiz_milk = document.getElementById("quiz-16-1");
+  if(quiz_milk.checked)
+  {
+    $('.attension-title').show();
+    $('.attension1').show();
+  }
+
+  var quiz_medical = document.getElementById("quiz-medical").value;
+  if(quiz_medical != "")
+  {
+    $('.attension-title').show();
+    $('.attension2').show();
+  }
+
+  var quiz_baby = document.getElementById("quiz-20-1");
+  if(quiz_baby.checked)
+  {
+    $('.attension-title').show();
+    $('.attension3').show();
+  }
+
+  var quiz_baby = document.getElementById("quiz-21-1");
+  if(quiz_baby.checked)
+  {
+    $('.attension-title').show();
+    $('.attension3').show();
   }
   
   var marksCanvas = document.getElementById("marksChart");  
@@ -548,18 +576,19 @@ function startDiagnosis() {
           label: "診断結果",
           backgroundColor: "rgba(200,0,0,0.2)",
           data: [parseFloat(eval_protain), parseFloat(eval_vitamin), parseFloat(eval_gap), parseFloat(eval_athletic), parseFloat(eval_body)],
-          options: {
-            scale: {
-                min: 0,
-                max: 100,
-            },
-        },
       }]
   };
 
   var radarChart = new Chart(marksCanvas, {
       type: 'radar',
-      data: marksData
+      data: marksData,
+      options: {
+        scale: {
+          min: 0,
+          max: 100,
+          stepSize: 10
+        }
+      },
   });
 
   let minvalue = Math.min(parseFloat(eval_protain), parseFloat(eval_vitamin), parseFloat(eval_gap), parseFloat(eval_athletic), parseFloat(eval_body));

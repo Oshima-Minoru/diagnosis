@@ -388,7 +388,18 @@ textarea {
   display: none;
 }
 
-
+.attension-title {
+  display: none;
+}
+.attension1 {
+  display: none;
+}
+.attension2 {
+  display: none;
+}
+.attension3 {
+  display: none;
+}
 /*---- レスポンシブ ----*/
 @media (max-width: 1280px) {
  
