@@ -155,6 +155,7 @@ li.custom-list {
   transform: translateX(-50%);
   border-radius: 50px;
   background-color: #E5671D;
+  transition: transform .3s;
 }
 .bar-top {
   top: 0px;
@@ -166,24 +167,22 @@ li.custom-list {
 .bar-bottom {
   bottom: 0px;
 }
-.burger-btn.close .bar-top {
-  transform: translate(-50%, 10px) rotate(45deg);
-  transition: transform .3s;
+.burger-btn.change .bar-top {
+  transform: translate(-50%, 12px) rotate(45deg);
 }
-.burger-btn.close .bar-mid {
+.burger-btn.change .bar-mid {
   opacity: 0;
-  transition: opacity .3s;
 }
-.burger-btn.close .bar-bottom {
-  transform: translate(-50%, -8px) rotate(-45deg);
-  transition: transform .3s;
+.burger-btn.change .bar-bottom {
+  transform: translate(-50%, -13px) rotate(-45deg);
 }
 #menu {
   max-height: 0;
   display: block;
   position: absolute;
+  left: -1;
+  right: 0;
   background-color: white;
-  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   z-index: 10;
@@ -375,6 +374,7 @@ li.custom-list {
 }
 .accept-time {
   width: 100%;
+  background-color: white;
   border: solid 1px #E5671D;
   display: flex;
   align-items: center;
@@ -392,7 +392,7 @@ li.custom-list {
   font-size: 20px;
   font-weight: 600;
   width: 75%;
-  padding-left: 50px;
+  text-align: center;
   color: #E5671D;
 }
 .accept-content .big-number {
@@ -439,6 +439,7 @@ li.custom-list {
   height: 203px;
   color: #E5671D;
   font-size: 20px;
+  background-color: white;
   border: 1px solid #E5671D;
   text-align: center;
 }
