@@ -854,13 +854,17 @@ footer .back-to-top {
   #menu > div:last-child {
     padding-bottom: 40px;
   }
-  .inner-container {
+  .section-overview .inner-container {
     padding: 0px;
     margin-left: 25px;
   }
   .section-require {
     margin-top: 50px;
     padding-bottom: 60px;
+  }
+  .section-require .inner-container {
+    padding: 0px;
+    margin-left: 25px;
   }
   .textbox-yellow {
     padding-bottom: 40px;
