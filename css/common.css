@@ -6,6 +6,12 @@
 html {
   scroll-behavior: smooth;
 }
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
 body {
   color: #707070;
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
