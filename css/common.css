@@ -228,6 +228,7 @@ li.custom-list {
 .main-menu {
   position: relative;
   max-width: 1200px;
+  margin: auto;
   height: 70px;
   padding: 0 20px;
   display: flex;
@@ -294,9 +295,12 @@ li.custom-list {
   justify-content: center;
   align-items: center;
   background-color: #E66CA4;
+  border: 1px solid #E66CA4;
+}
+.nav-item.apply a::after {
+  display: none;
 }
 .nav-item.apply:hover {
-  transform: none;
   color: #E66CA4 !important;
   background-color: white;
   border: 1px solid #E66CA4;
@@ -308,18 +312,19 @@ li.custom-list {
   color: #E66CA4 !important;
 }
 .nav-item.apply a:hover::after {
-  transform: scale(0, 0) !important;
+  display: none;
 }
 
 /* top-bar */
 .section-topbar {
   width: 100vw;
   height: 22px;
-  background-color: #E5671D;
+  background-color: #F3A35E;
 }
 .section-topbar p {
   font-size: 15px;
   text-align: center;
+  color: white;
 }
 
 /*---- top ----*/
@@ -407,6 +412,7 @@ li.custom-list {
   background-color: #FBFBF0;
   margin-top: 42px;
   padding-bottom: 90px;
+  scroll-margin-top: 70px;
 }
 .section-overview h2 {
   padding-top: 47px;
@@ -475,6 +481,7 @@ li.custom-list {
 .section-require {
   margin-top: 90px;
   padding-bottom: 106px;
+  scroll-margin-top: 100px;
 }
 .textbox-yellow {
   margin-top: 44px;
@@ -487,6 +494,7 @@ li.custom-list {
   background-color: #FBFBF0;
   padding-top: 86px;
   padding-bottom: 113px;
+  scroll-margin-top: 70px;
 }
 
 .section-apply .button-container {
@@ -497,6 +505,9 @@ li.custom-list {
 }
 .button-red {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48.5%;
   height: 111px;
   color: white;
@@ -527,9 +538,16 @@ li.custom-list {
   background-color: white;
   border: 1px solid #E66CA4;
 }
+#apply1 {
+  scroll-margin-top: 70px;
+}
+#apply2 {
+  scroll-margin-top: 70px;
+}
 .section-apply .apply-title {
-  margin: auto;
+  text-align: center;
   margin-top: 62px;
+  margin-bottom: 40px;
   font-size: 32px;
   font-weight: 600;
   color: #E66CA4;
@@ -591,11 +609,19 @@ li.custom-list {
   background-image: url("../img/li_arrow.svg");
   background-repeat: no-repeat;
 }
-
+.download-container ul li a{
+  text-decoration: none;
+  color: #444444;
+}
+.download-container ul li a:hover{
+  color: #4481E2;
+  text-decoration: underline;
+}
 /* section faq */
 .section-faq {
   margin-top: 108px;
   padding-bottom: 90px;
+  scroll-margin-top: 70px;
 }
 
 .section-faq .wrapper {
@@ -659,6 +685,7 @@ li.custom-list {
 /* section contact */
 .section-contact {
   margin-top: 80px;
+  scroll-margin-top: 100px;
 }
 .section-contact h2 {
   margin-bottom: 26px;
