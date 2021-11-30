@@ -45,6 +45,23 @@ function menu(x) {
     }
 }
 
+function menuClose() {
+    var menuBtn = document.getElementsByClassName('burger-btn')[0];
+    if (menuBtn.classList.contains('change'))
+        menuBtn.classList.remove('change');
+        
+    var menu = document.getElementById('menu');
+    if (menu.style.maxHeight) {
+        menu.style.maxHeight = null;
+        menu.style.border = 'none';
+    }
+    else {
+        menu.style.border = '1px solid #E5671D';
+        menu.style.maxHeight = menu.scrollHeight + 'px';
+        menu.style.maxHeight = '100vh';
+    }
+}
+
 function faqClick(x) {
     x.parentElement.classList.toggle('faq_show');
     var faq = document.getElementsByClassName('faq_card');
