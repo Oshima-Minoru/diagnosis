@@ -205,8 +205,6 @@ li.custom-list {
   white-space: nowrap;
   transition: max-height .3s ease;
   -webkit-transition: max-height .3s ease;
-  transition: max-height .3s ease;
-  -webkit-transition: max-height .3s ease;
   z-index: 10;
 }
 
