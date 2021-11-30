@@ -97,6 +97,13 @@ h4{
   font-weight: 300;
   text-align: center;
 }
+h5 {
+  color: #E5671D;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 p {
   font-size: 17px;
@@ -423,17 +430,11 @@ li.custom-list {
 .section-news {
   margin-top: 110px;
 }
-.section-news .news-title {
-  margin: auto;
+.section-news h5.news-title span {
   font-size: 12px;
   text-align: center;
   line-height: 1.5;
-  margin-bottom: 20px;
-}
-.section-news .news-title span {
-  color: #E5671D;
-  font-size: 20px;
-  font-weight: 600;
+  color: #B1A88E;
 }
 .marker {
   color: #E5671D;
