@@ -585,7 +585,7 @@ li.custom-list {
 }
 .download-container .download-title {
   font-size: 24px;
-  font-weight: 600px;
+  font-weight: 600;
   color: white;
   text-align: center;
   padding: 15px 0;
