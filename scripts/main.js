@@ -370,7 +370,7 @@ function startDiagnosis() {
   $('.evaluate-btn').hide();
   $('.progressbar').hide();
 
-  var result, result_bmi, eval_protain, eval_vitamin, eval_gap, eval_athletic, eval_body;
+  var result, result_bmi, eval_protain, eval_vitamin, eval_gap, eval_exercise, eval_break;
   var quiz_sex, quiz_weight, eval_weight, quiz_ideal_weight, eval_ideal_weight, quiz_length, eval_length, quiz_old, eval_old,
       quiz_breakfast, quiz_food, quiz_job, quiz_athletic, quiz_sleeptime, quiz_6, quiz_7, quiz_8, quiz_9;
 
@@ -510,28 +510,28 @@ function startDiagnosis() {
     param2 = 75;
   else if(quiz_athletic == 5)
     param2 = 100;
-  eval_athletic = param1 + param2;
-  if(eval_athletic > 100)
-    eval_athletic = 100;                                               //athletic
+  eval_exercise = param1 + param2;
+  if(eval_exercise > 100)
+    eval_exercise = 100;                                               //athletic
 
   val_tmp = (quiz_6 + quiz_7 + quiz_8 + quiz_9) * 5;
-  eval_body = (quiz_sleeptime - val_tmp) - eval_athletic/10;           //body
+  eval_break = (quiz_sleeptime - val_tmp) - eval_exercise/10;           //body
   
   // $('.result').val(result);
   // $('.protain').val(eval_protain);
   // $('.vitamin').val(eval_vitamin);
   // $('.gap').val(eval_gap);
-  // $('.athletic').val(eval_athletic);
-  // $('.body').val(eval_body);
+  // $('.athletic').val(eval_exercise);
+  // $('.body').val(eval_break);
 
   if(eval_protain > 100)
     eval_protain = 100;
-  if(eval_athletic > 100)
-    eval_athletic = 100;
+  if(eval_exercise > 100)
+    eval_exercise = 100;
   if(eval_vitamin > 100)
     eval_vitamin = 100;
-  if(eval_body > 100)
-    eval_body = 100;
+  if(eval_break > 100)
+    eval_break = 100;
   if(eval_gap > 100)
     eval_gap = 100;
 
@@ -575,7 +575,7 @@ function startDiagnosis() {
       datasets: [{
           label: "診断結果",
           backgroundColor: "rgba(200,0,0,0.2)",
-          data: [parseFloat(eval_protain), parseFloat(eval_vitamin), parseFloat(eval_gap), parseFloat(eval_athletic), parseFloat(eval_body)],
+          data: [parseFloat(eval_protain), parseFloat(eval_vitamin), parseFloat(eval_gap), parseFloat(eval_exercise), parseFloat(eval_break)],
       }]
   };
 
@@ -591,19 +591,17 @@ function startDiagnosis() {
       },
   });
 
-  let minvalue = Math.min(parseFloat(eval_protain), parseFloat(eval_vitamin), parseFloat(eval_gap), parseFloat(eval_athletic), parseFloat(eval_body));
+  let minvalue = Math.min(parseFloat(eval_protain), parseFloat(eval_vitamin), parseFloat(eval_gap), parseFloat(eval_exercise), parseFloat(eval_break));
   if(minvalue == parseFloat(eval_protain))
     document.getElementById("result-protain").style.display = "block";
   else if(minvalue == parseFloat(eval_vitamin))
-    document.getElementById("result-break").style.display = "block";
-  else if(minvalue == parseFloat(eval_athletic))
-    document.getElementById("result-exercise").style.display = "block";
+    document.getElementById("result-vitamin").style.display = "block";
   else if(minvalue == parseFloat(eval_gap))
     document.getElementById("result-gap").style.display = "block";
-  else if(minvalue == parseFloat(eval_body))
-    document.getElementById("result-gap1").style.display = "block";
-
-
+  else if(minvalue == parseFloat(eval_exercise))
+    document.getElementById("result-exercise").style.display = "block";
+  else if(minvalue == parseFloat(eval_break))
+    document.getElementById("result-break").style.display = "block";
 }
 
 
