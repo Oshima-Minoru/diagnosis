@@ -596,9 +596,9 @@ function startDiagnosis() {
     document.getElementById("result-protain").style.display = "block";
   else if(minvalue == parseFloat(eval_vitamin))
     document.getElementById("result-break").style.display = "block";
-  else if(minvalue == parseFloat(eval_gap))
-    document.getElementById("result-exercise").style.display = "block";
   else if(minvalue == parseFloat(eval_athletic))
+    document.getElementById("result-exercise").style.display = "block";
+  else if(minvalue == parseFloat(eval_gap))
     document.getElementById("result-gap").style.display = "block";
   else if(minvalue == parseFloat(eval_body))
     document.getElementById("result-gap1").style.display = "block";
