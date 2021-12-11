@@ -548,6 +548,15 @@ function startDiagnosis() {
     $('.attension1').show();
   }
 
+  var quiz_supplement = document.getElementById("quiz-17-1");
+  if(quiz_supplement.checked)
+  {
+    $('.attension-title').show();
+    $('.attension3').show();
+  }
+
+
+
   var quiz_medical = document.getElementById("quiz-medical").value;
   if(quiz_medical != "")
   {
@@ -559,14 +568,14 @@ function startDiagnosis() {
   if(quiz_baby.checked)
   {
     $('.attension-title').show();
-    $('.attension3').show();
+    $('.attension2').show();
   }
 
   var quiz_baby = document.getElementById("quiz-21-1");
   if(quiz_baby.checked)
   {
     $('.attension-title').show();
-    $('.attension3').show();
+    $('.attension2').show();
   }
   
   var marksCanvas = document.getElementById("marksChart");  
