@@ -68,7 +68,7 @@ img {
   text-align: left;
 }
 .result-explain .attension-title {
-  color: #D96D00;
+  color: #6CBB5A;
   font-size: 12px;
   text-align: center;
 }
@@ -98,31 +98,16 @@ img {
 }
 
 .top-page img {
-  width: 80%;
+  height: 50%;
 }
 
 .top-title {
   margin-top: 35px;
 }
 .top-title h2 {
-  font-size: 22px;
-  font-weight: normal;
-}
-
-.top-title h2 span {
-  font-size: 34px;
-  font-weight: 500;
-}
-
-.top-title h1 {
   font-size: 32px;
   font-weight: 500;
-  color: #D96D00;
-}
-
-.top-title p {
-  font-weight: 300;
-  margin-bottom: 35px;
+  color: #62342b;
 }
 
 .slick-next {
@@ -135,27 +120,27 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #DC6F00;
-  border: 2px solid #DC6F00;
+  color: #6CBB5A;
+  border: 2px solid #6CBB5A;
   background-color: white;
-  font-size: 18px;
+  font-size: 24px;
   padding-right: 2em;
-  width: 370px;
+  width: 320px;
   height: 53px;
   line-height: 1.5;
   border-radius: 999px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   position: relative;
   cursor: pointer;
   transition: all .3s ease;
 }
 .button svg path {
-  fill: #DC6F00;
-  stroke: #DC6F00;
+  fill: #6CBB5A;
+  stroke: #6CBB5A;
 }
 .button svg circle {
-  stroke: #DC6F00;
+  stroke: #6CBB5A;
 }
 
 .button svg {
@@ -172,8 +157,8 @@ img {
 }
 
 .button:hover {
-  background-color: #DC6F00;
-  border: 2px solid #DC6F00;
+  background-color: #6CBB5A;
+  border: 2px solid #6CBB5A;
   color: white;
 }
 .button:hover svg path {
@@ -211,7 +196,7 @@ img {
   border-radius: 0;
   overflow: hidden;
   background-color: grey;
-  background-image: linear-gradient(to right, #D96D00, #D96D00);
+  background-image: linear-gradient(to right, #6CBB5A, #6CBB5A);
   background-repeat: no-repeat;
   background-size: 0 100%;
   transition: background-size .4s ease-in-out;
@@ -226,29 +211,17 @@ img {
 .banner.banner-meal {
   background-image: url(../img/banner-meal.jpg);
 }
-.banner.banner-athletic {
-  background-image: url(../img/banner-athletic.jpg);
-}
-.banner.banner-vitamin {
-  background-image: url(../img/banner-vitamin.jpg);
+.banner.banner-lifestyle {
+  background-image: url(../img/banner-lifestyle.jpg);
 }
 .banner.banner-body {
   background-image: url(../img/banner-body.jpg);
 }
+.banner.banner-yourself {
+  background-image: url(../img/banner-yourself.jpg);
+}
 .banner-attention {
   background-image: url(../img/banner-attention.jpg);
-}
-.banner-figure {
-  background-image: url(../img/baner-figure.jpg);
-}
-.banner-medical {
-  background-image: url(../img/banner-medical.jpg);
-}
-.banner-alergy {
-  background-image: url(../img/banner-alergy.jpg);
-}
-.banner-baby {
-  background-image: url(../img/banner-baby.jpg);
 }
 .banner-result {
   background-image: url(../img/banner-result.jpg);
@@ -290,7 +263,7 @@ img {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
-  color: #D96D00;
+  color: #6CBB5A;
 }
 .quiz-content {
   width: 70%;
@@ -300,6 +273,9 @@ img {
   justify-content: space-around;
   margin: auto;
   flex-wrap: wrap;
+}
+.quiz-content .input-field {
+  display: flex;
 }
 textarea {
   width: 100%;
@@ -320,7 +296,7 @@ textarea {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  width: 300px;
+  width: 350px;
   margin-bottom: 10px;
 }
 .quiz-content .left-content div {
@@ -335,7 +311,7 @@ textarea {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  width: 300px;
+  width: 350px;
   margin-bottom: 10px;
 }
 .quiz-content .right-content div {
@@ -346,7 +322,7 @@ textarea {
   margin-bottom: 10px;
 }
 .quiz-content div div img {
-  width: 70px;
+  width: 100px;
   height: auto;
 }
 .quiz-content input{

@@ -534,7 +534,9 @@ function startDiagnosis() {
     eval_break = 100;
   if(eval_gap > 100)
     eval_gap = 100;
-
+  if(eval_gap < 0)
+    eval_gap = 0;
+    
   var user_name = document.getElementById("quiz-name").value;
   var ele = document.getElementsByName("username");
   for(var i = 0; i < ele.length; i++) {
