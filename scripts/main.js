@@ -364,6 +364,17 @@ $(".quiz-name").click(function(event){
 });
 
 function startDiagnosis() {
+  var value = "";
+  for(var i = 1; i < 21; i++)
+  {
+    value = testValidate(testPage);
+    if(value == "")
+    {
+      alert("Q." + i + "が未回答です。");
+      return;
+    }
+  }
+
   $('.progress').css("background-size", 100+"% " + 100 + "%");
   $('.slider').hide();
   $('.result-page').show();
