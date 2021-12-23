@@ -332,6 +332,9 @@ $(".quiz-content .next-radio").click(function(event){
 $('#quiz-11-1').click(function(event){
   max_page = 18;
 });
+$('#quiz-11-2').click(function(event){
+  max_page = 20;
+});
 $('#quiz-18-1').click(function(event){
   // var obj = event.target;
   $( "#quiz-medical" ).prop( "disabled", false );
@@ -365,7 +368,7 @@ $(".quiz-name").click(function(event){
 
 function startDiagnosis() {
   var value = "";
-  for(var i = 1; i < 21; i++)
+  for(var i = 1; i < max_page + 1; i++)
   {
     value = testValidate(i);
     if(value == "")
