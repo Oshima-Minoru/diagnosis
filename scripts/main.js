@@ -367,7 +367,7 @@ function startDiagnosis() {
   var value = "";
   for(var i = 1; i < 21; i++)
   {
-    value = testValidate(testPage);
+    value = testValidate(i);
     if(value == "")
     {
       alert("Q." + i + "が未回答です。");
