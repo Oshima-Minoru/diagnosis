@@ -32,6 +32,9 @@ img {
   width: 100%;
 }
 
+.text-bold {
+  font-weight: bold;
+}
 
 .content {
   min-height: 100vh;
@@ -59,10 +62,10 @@ img {
 }
 .result-explain .result-title {
   font-size: 18px;
-  font-weight: bold;
   padding-bottom: 20px;
   text-align: left;
 }
+
 .result-explain .result-text {
   font-size: 14px;
   text-align: left;
@@ -75,6 +78,15 @@ img {
 .result-explain .result-attension {
   font-size: 10px;
   text-align: left;
+}
+.result-explain .result-notice {
+  font-size: 16px;
+  text-align: center;
+}
+.result-explain .button {
+  font-size: 14px;
+  width: 380px;
+  text-decoration: none;
 }
 .top-page {
   position: fixed;
