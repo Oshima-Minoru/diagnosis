@@ -83,7 +83,7 @@ img {
   font-size: 16px;
   text-align: center;
 }
-.result-explain .button {
+.result-explain a.button {
   font-size: 14px;
   width: 380px;
   text-decoration: none;
