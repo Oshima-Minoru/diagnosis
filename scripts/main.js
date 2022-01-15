@@ -1,5 +1,8 @@
 "use strict";
 var max_page = 20;
+var outString = "";
+var strMainSep = "____";
+var strSubSep = "@@@@";
 $(document).ready(function() {
     var $slider = $('.slider');
     var $progressBar = $('.progress');
@@ -18,7 +21,7 @@ $(document).ready(function() {
         $('.slick-next').hide();
         return;
       }
-
+      
       var testPage = nextSlide;
       if(nextSlide < currentSlide)
         testPage = currentSlide;
@@ -64,160 +67,197 @@ function testValidate(curPage){
   {
     var ele1 = document.getElementsByName('quiz-1');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 2)
   {
     var ele1 = document.getElementsByName('quiz-2');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strSubSep;
+      }
     }
+    outString += strMainSep;
   }
   else if(curPage == 3)
   {
     var ele1 = document.getElementsByName('quiz-3');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 4)
   {
     var ele1 = document.getElementsByName('quiz-4');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 5)
   {
     var ele1 = document.getElementsByName('quiz-5');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 6)
   {
     var ele1 = document.getElementsByName('quiz-6');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 7)
   {
     var ele1 = document.getElementsByName('quiz-7');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 8)
   {
     var ele1 = document.getElementsByName('quiz-8');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 9)
   {
     var ele1 = document.getElementsByName('quiz-9');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 10)
   {
     var ele1 = document.getElementsByName('quiz-name');
     pageValue = ele1[0].value;
+    outString += pageValue + strMainSep;
   }
   else if(curPage == 11)
   {
     var ele1 = document.getElementsByName('quiz-11');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 12)
   {
     var ele1 = document.getElementsByName('quiz-old');
     pageValue = ele1[0].value;
+    outString += pageValue + strMainSep;
   }
   else if(curPage == 13)
   {
     var ele1 = document.getElementsByName('quiz-length');
     pageValue = ele1[0].value;
+    outString += pageValue + strMainSep;
   }
   else if(curPage == 14)
   {
     var ele1 = document.getElementsByName('quiz-weight');
     pageValue = ele1[0].value;
+    outString += pageValue + strMainSep;
   }
   else if(curPage == 15)
   {
     var ele1 = document.getElementsByName('quiz-ideal-weight');
     pageValue = ele1[0].value;
+    outString += pageValue + strMainSep;
   }
   else if(curPage == 16)
   {
     var ele1 = document.getElementsByName('quiz-16');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 17)
   {
     var ele1 = document.getElementsByName('quiz-17');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
   else if(curPage == 18)
   {
     var ele1 = document.getElementsByName('quiz-18');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        // outString += pageValue + strMainSep;
+      }
     }
-  }
+    var ele1 = document.getElementsByName('quiz-medical');
+    var temp = ele1[0].value;
+    outString += temp + strMainSep;
+}
   else if(curPage == 19)
   {
     var ele1 = document.getElementsByName('quiz-19');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        // outString += pageValue + strMainSep;
+      }
     }
+    var ele1 = document.getElementsByName('quiz-allergy');
+    var temp = ele1[0].value;
+    outString += temp + strMainSep;
   }
   else if(curPage == 20)
   {
     var ele1 = document.getElementsByName('quiz-20');
     for(var i = 0; i < ele1.length; i++) {
-        if(ele1[i].checked){
-          pageValue = ele1[i].value;
-        }
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
+    }
+  }
+  else if(curPage == 21)
+  {
+    var ele1 = document.getElementsByName('quiz-21');
+    for(var i = 0; i < ele1.length; i++) {
+      if(ele1[i].checked){
+        pageValue = ele1[i].value;
+        outString += pageValue + strMainSep;
+      }
     }
   }
 
@@ -360,23 +400,12 @@ $(".quiz-content input[type=checkbox]").click(function(event){
   // var obj = event.target;
   $('.slick-next').show();
 });
-
-
 $(".quiz-name").click(function(event){
   $('.slick-next').show();
 });
 
 function startDiagnosis() {
-  var value = "";
-  for(var i = 1; i < max_page + 1; i++)
-  {
-    value = testValidate(i);
-    if(value == "")
-    {
-      alert("Q." + i + "が未回答です。");
-      return;
-    }
-  }
+  
 
   $('.progress').css("background-size", 100+"% " + 100 + "%");
   $('.slider').hide();
@@ -531,13 +560,6 @@ function startDiagnosis() {
   val_tmp = (quiz_6 + quiz_7 + quiz_8 + quiz_9) * 5;
   eval_break = (quiz_sleeptime - val_tmp) - eval_exercise/10;           //body
   
-  // $('.result').val(result);
-  // $('.protain').val(eval_protain);
-  // $('.vitamin').val(eval_vitamin);
-  // $('.gap').val(eval_gap);
-  // $('.athletic').val(eval_exercise);
-  // $('.body').val(eval_break);
-
   if(eval_protain > 100)
     eval_protain = 100;
   if(eval_exercise > 100)
@@ -570,8 +592,6 @@ function startDiagnosis() {
     $('.attension-title').show();
     $('.attension3').show();
   }
-
-
 
   var quiz_medical = document.getElementById("quiz-medical").value;
   if(quiz_medical != "")
@@ -629,4 +649,18 @@ function startDiagnosis() {
     document.getElementById("result-break").style.display = "block";
 }
 
-
+function getOutString()
+{
+  outString = "";
+  var value = "";
+  for(var i = 1; i <= max_page + 1; i++)
+  {
+    value = testValidate(i);
+    if(value == "")
+    {
+      alert("Q." + i + "が未回答です。");
+      return "";
+    }
+  }
+  return outString;
+}
