@@ -276,24 +276,24 @@
                   <div>
                     <img src="img/1-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-1-1" name="quiz-1" value="1">
-                    <label for="quiz-1-1">食べない</label>
+                    <label name="quiz-1-1" for="quiz-1-1">食べない</label>
                   </div>
                   <div>
                     <img src="img/1-3.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-1-3" name="quiz-1" value="1">
-                    <label for="quiz-1-3">週3-5回食べる</label>
+                    <label name="quiz-1-3" for="quiz-1-3">週3-5回食べる</label>
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/1-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-1-2" name="quiz-1" value="0.5">
-                    <label for="quiz-1-2">週1-2回食べる</label><br>
+                    <label name="quiz-1-2" for="quiz-1-2">週1-2回食べる</label><br>
                   </div>  
                   <div>
                     <img src="img/1-4.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-1-4" name="quiz-1" value="0">
-                    <label for="quiz-1-4">週6回以上食べる</label>
+                    <label name="quiz-1-4" for="quiz-1-4">週6回以上食べる</label>
                   </div>  
                 </div>
               </div>
@@ -307,44 +307,44 @@
                   <div>
                     <img src="img/2-1.png" alt="">
                     <input type="checkbox" id="quiz-2-1" name="quiz-2" value="-1">
-                    <label for="quiz-2-1">肉類</label>    
+                    <label name="quiz-2-1" for="quiz-2-1">肉類</label>    
                   </div>
                   <div>
                     <img src="img/2-2.png" alt="">
                     <input type="checkbox" id="quiz-2-2" name="quiz-2" value="-1">
-                    <label for="quiz-2-2">豆・納豆・豆腐</label><br>    
+                    <label name="quiz-2-2" for="quiz-2-2">豆・納豆・豆腐</label><br>    
                   </div>
                   <div>
                     <img src="img/2-3.png" alt="">
                     <input type="checkbox" id="quiz-2-3" name="quiz-2" value="0">
-                    <label for="quiz-2-3">米</label>
+                    <label name="quiz-2-3" for="quiz-2-3">米</label>
                   </div>
                   <div>
                     <img src="img/2-4.png" alt="">
                     <input type="checkbox" id="quiz-2-4" name="quiz-2" value="0">
-                    <label for="quiz-2-4">麺類</label>
+                    <label name="quiz-2-4" for="quiz-2-4">麺類</label>
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/2-5.png" alt="">
                     <input type="checkbox" id="quiz-2-5" name="quiz-2" value="-1">
-                    <label for="quiz-2-5">魚介類</label>    
+                    <label name="quiz-2-5" for="quiz-2-5">魚介類</label>    
                   </div>
                   <div>
                     <img src="img/2-6.png" alt="">
                     <input type="checkbox" id="quiz-2-6" name="quiz-2" value="0">
-                    <label for="quiz-2-6">野菜</label><br>    
+                    <label name="quiz-2-6" for="quiz-2-6">野菜</label><br>    
                   </div>
                   <div>
                     <img src="img/2-7.png" alt="">
                     <input type="checkbox" id="quiz-2-7" name="quiz-2" value="0">
-                    <label for="quiz-2-7">パン</label>
+                    <label name="quiz-2-7" for="quiz-2-7">パン</label>
                   </div>
                   <div>
                     <img src="img/2-8.png" alt="">
                     <input type="checkbox" id="quiz-2-8" name="quiz-2" value="1">
-                    <label for="quiz-2-8">菓子類</label>
+                    <label name="quiz-2-8" for="quiz-2-8">菓子類</label>
                   </div>  
                 </div>
               </div>
@@ -358,14 +358,14 @@
                   <div>
                     <img src="img/3-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-3-1" name="quiz-3" value="0">
-                    <label for="quiz-3-1">デスクワークや座っていることが多い</label>    
+                    <label name="quiz-3-1" for="quiz-3-1">デスクワークや座っていることが多い</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/3-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-3-2" name="quiz-3" value="1">
-                    <label for="quiz-3-2">身体を動かすことが多い</label>    
+                    <label name="quiz-3-2" for="quiz-3-2">身体を動かすことが多い</label>    
                   </div>
                 </div>
               </div>
@@ -379,24 +379,24 @@
                   <div>
                     <img src="img/4-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-4-1" name="quiz-4" value="0">
-                    <label for="quiz-4-1">ほとんど運動をしない</label>    
+                    <label name="quiz-4-1" for="quiz-4-1">ほとんど運動をしない</label>    
                   </div>
                   <div>
                     <img src="img/4-3.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-4-3" name="quiz-4" value="2.5">
-                    <label for="quiz-4-3">週3-5回運動する</label>    
+                    <label name="quiz-4-3" for="quiz-4-3">週3-5回運動する</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/4-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-4-2" name="quiz-4" value="1">
-                    <label for="quiz-4-2">週1-2回運動する</label>    
+                    <label name="quiz-4-2" for="quiz-4-2">週1-2回運動する</label>    
                   </div>
                   <div>
                     <img src="img/4-4.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-4-4" name="quiz-4" value="5">
-                    <label for="quiz-4-4">週6回以上運動する</label>    
+                    <label name="quiz-4-4" for="quiz-4-4">週6回以上運動する</label>    
                   </div>
                 </div>
               </div>
@@ -410,24 +410,24 @@
                   <div>
                     <img src="img/5-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-5-1" name="quiz-5" value="70">
-                    <label for="quiz-5-1">3時間未満</label>    
+                    <label name="quiz-5-1" for="quiz-5-1">3時間未満</label>    
                   </div>
                   <div>
                     <img src="img/5-3.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-5-3" name="quiz-5" value="100">
-                    <label for="quiz-5-3">6~8時間未満</label>   
+                    <label name="quiz-5-3" for="quiz-5-3">6~8時間未満</label>   
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/5-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-5-2" name="quiz-5" value="80">
-                    <label for="quiz-5-2">3~6時間未満</label>    
+                    <label name="quiz-5-2" for="quiz-5-2">3~6時間未満</label>    
                   </div>
                   <div>
                     <img src="img/5-4.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-5-4" name="quiz-5" value="90">
-                    <label for="quiz-5-4">8時間以上</label>    
+                    <label name="quiz-5-4" for="quiz-5-4">8時間以上</label>    
                   </div>
                 </div>
               </div>
@@ -441,14 +441,14 @@
                   <div>
                     <img src="img/6-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-6-1" name="quiz-6" value="0">    
-                    <label for="quiz-6-1">疲れやすい</label>    
+                    <label name="quiz-6-1" for="quiz-6-1">疲れやすい</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/6-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-6-2" name="quiz-6" value="1">
-                    <label for="quiz-6-2">疲れにくい</label>   
+                    <label name="quiz-6-2" for="quiz-6-2">疲れにくい</label>   
                   </div>
                 </div>
               </div>
@@ -462,14 +462,14 @@
                   <div>
                     <img src="img/7-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-7-1" name="quiz-7" value="0">
-                    <label for="quiz-7-1">気になる</label>
+                    <label name="quiz-7-1" for="quiz-7-1">気になる</label>
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/7-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-7-2" name="quiz-7" value="1">
-                    <label for="quiz-7-2">気にならない</label>   
+                    <label name="quiz-7-2" for="quiz-7-2">気にならない</label>   
                   </div>
                 </div>
               </div>
@@ -483,14 +483,14 @@
                   <div>
                     <img src="img/8-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-8-1" name="quiz-8" value="0">
-                    <label for="quiz-8-1">気になる</label>    
+                    <label name="quiz-8-1" for="quiz-8-1">気になる</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/8-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-8-2" name="quiz-8" value="1">
-                    <label for="quiz-8-2">気にならない</label>   
+                    <label name="quiz-8-2" for="quiz-8-2">気にならない</label>   
                   </div>
                 </div>
               </div>
@@ -504,14 +504,14 @@
                   <div>
                     <img src="img/9-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-9-1" name="quiz-9" value="0">
-                    <label for="quiz-9-1">気になる</label>    
+                    <label name="quiz-9-1" for="quiz-9-1">気になる</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/9-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-9-2" name="quiz-9" value="1">
-                    <label for="quiz-9-2">気にならない</label>   
+                    <label name="quiz-9-2" for="quiz-9-2">気にならない</label>   
                   </div>
                 </div>
               </div>
@@ -533,14 +533,14 @@
                   <div>
                     <img src="img/11-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-11-1" name="quiz-11" value="0">
-                    <label for="quiz-11-1">男性</label>    
+                    <label name="quiz-11-1" for="quiz-11-1">男性</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/11-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-11-2" name="quiz-11" value="-5">
-                    <label for="quiz-11-2">女性</label>
+                    <label name="quiz-11-2" for="quiz-11-2">女性</label>
                   </div>
                 </div>
               </div>
@@ -598,14 +598,14 @@
                   <div>
                     <img src="img/16-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-16-1" name="quiz-16" value="0">
-                    <label for="quiz-16-1">抵抗がある</label>    
+                    <label name="quiz-16-1" for="quiz-16-1">抵抗がある</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/16-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-16-2" name="quiz-16" value="1">
-                    <label for="quiz-16-2">抵抗はない</label>   
+                    <label name="quiz-16-2" for="quiz-16-2">抵抗はない</label>   
                   </div>
                 </div>
               </div>
@@ -619,14 +619,14 @@
                   <div>
                     <img src="img/17-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-17-1" name="quiz-17" value="0">
-                    <label for="quiz-17-1">はい</label>    
+                    <label name="quiz-17-1" for="quiz-17-1">はい</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/17-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-17-2" name="quiz-17" value="1">
-                    <label for="quiz-17-2">いいえ</label>
+                    <label name="quiz-17-2" for="quiz-17-2">いいえ</label>
                   </div>
                 </div>
               </div>
@@ -640,11 +640,11 @@
                 <div class="radio-content">
                   <div>
                     <input type="radio" id="quiz-18-1" name="quiz-18" value="0">
-                    <label for="quiz-18-1">ある</label>  
+                    <label name="quiz-18-1" for="quiz-18-1">ある</label>  
                   </div>
                   <div>
                     <input class="next-radio" type="radio" id="quiz-18-2" name="quiz-18" value="1">
-                    <label for="quiz-18-2">特にない</label>  
+                    <label name="quiz-18-2" for="quiz-18-2">特にない</label>  
                   </div>
                 </div>
                 <textarea id="quiz-medical" name="quiz-medical" rows="3" cols="50" placeholder="テキスト" disabled onchange="medicalChanged()"></textarea>
@@ -659,11 +659,11 @@
                 <div class="radio-content">
                   <div>
                     <input type="radio" id="quiz-19-1" name="quiz-19" value="0">
-                    <label for="quiz-19-1">はい</label>  
+                    <label name="quiz-19-1" for="quiz-19-1">はい</label>  
                   </div>
                   <div>
                     <input type="radio" id="quiz-19-2" name="quiz-19" value="1">
-                    <label for="quiz-19-2">いいえ</label>  
+                    <label name="quiz-19-2" for="quiz-19-2">いいえ</label>  
                   </div>
                 </div>
                 <textarea id="quiz-allergy" name="quiz-allergy" rows="3" cols="50" placeholder="テキスト" disabled onchange="allergyChanged()"></textarea>
@@ -678,14 +678,14 @@
                   <div>
                     <img src="img/20-1.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-20-1" name="quiz-20" value="0">
-                    <label for="quiz-20-1">はい</label>    
+                    <label name="quiz-20-1" for="quiz-20-1">はい</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/20-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-20-2" name="quiz-20" value="1">
-                    <label for="quiz-20-2">いいえ</label>
+                    <label name="quiz-20-2" for="quiz-20-2">いいえ</label>
                   </div>
                 </div>
               </div>
@@ -699,14 +699,14 @@
                   <div>
                     <img src="img/21-1.png" alt="">
                     <input type="radio" id="quiz-21-1" name="quiz-21" value="0">
-                    <label for="quiz-21-1">はい</label>    
+                    <label name="quiz-21-1" for="quiz-21-1">はい</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
                     <img src="img/21-2.png" alt="">
                     <input type="radio" id="quiz-21-2" name="quiz-21" value="1">
-                    <label for="quiz-21-2">いいえ</label>
+                    <label name="quiz-21-2" for="quiz-21-2">いいえ</label>
                   </div>
                 </div>
               </div>

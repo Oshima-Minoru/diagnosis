@@ -69,7 +69,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -79,7 +81,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strSubSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strSubSep;
       }
     }
     outString += strMainSep;
@@ -90,7 +94,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -100,7 +106,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -110,7 +118,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -120,7 +130,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -130,7 +142,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -140,7 +154,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -150,7 +166,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -166,7 +184,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -200,7 +220,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -210,7 +232,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -246,7 +270,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
@@ -256,7 +282,9 @@ function testValidate(curPage){
     for(var i = 0; i < ele1.length; i++) {
       if(ele1[i].checked){
         pageValue = ele1[i].value;
-        outString += pageValue + strMainSep;
+        var eleID = ele1[i].id;
+        var labelName = document.getElementsByName(eleID)[0].textContent;
+        outString += labelName + strMainSep;
       }
     }
   }
