@@ -475,5 +475,13 @@ textarea {
 }
 
 @media (max-width: 768px){
-
+  .quiz-content div div img {
+    width: 70px;
+    height: auto;
+  }
+  .quiz-content input {
+    height: 35px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
 }
