@@ -382,16 +382,16 @@
                     <label name="quiz-4-1" for="quiz-4-1">ほとんど運動をしない</label>    
                   </div>
                   <div>
-                    <img src="img/4-3.png" alt="">
-                    <input class="next-radio" type="radio" id="quiz-4-3" name="quiz-4" value="2.5">
-                    <label name="quiz-4-3" for="quiz-4-3">週3-5回運動する</label>    
-                  </div>
-                </div>
-                <div class="right-content">
-                  <div>
                     <img src="img/4-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-4-2" name="quiz-4" value="1">
                     <label name="quiz-4-2" for="quiz-4-2">週1-2回運動する</label>    
+                  </div>
+                </div>
+                <div class="right-content">
+                <div>
+                    <img src="img/4-3.png" alt="">
+                    <input class="next-radio" type="radio" id="quiz-4-3" name="quiz-4" value="2.5">
+                    <label name="quiz-4-3" for="quiz-4-3">週3-5回運動する</label>    
                   </div>
                   <div>
                     <img src="img/4-4.png" alt="">
@@ -413,16 +413,16 @@
                     <label name="quiz-5-1" for="quiz-5-1">3時間未満</label>    
                   </div>
                   <div>
-                    <img src="img/5-3.png" alt="">
-                    <input class="next-radio" type="radio" id="quiz-5-3" name="quiz-5" value="100">
-                    <label name="quiz-5-3" for="quiz-5-3">6~8時間未満</label>   
+                    <img src="img/5-2.png" alt="">
+                    <input class="next-radio" type="radio" id="quiz-5-2" name="quiz-5" value="80">
+                    <label name="quiz-5-2" for="quiz-5-2">3~6時間未満</label>    
                   </div>
                 </div>
                 <div class="right-content">
                   <div>
-                    <img src="img/5-2.png" alt="">
-                    <input class="next-radio" type="radio" id="quiz-5-2" name="quiz-5" value="80">
-                    <label name="quiz-5-2" for="quiz-5-2">3~6時間未満</label>    
+                    <img src="img/5-3.png" alt="">
+                    <input class="next-radio" type="radio" id="quiz-5-3" name="quiz-5" value="100">
+                    <label name="quiz-5-3" for="quiz-5-3">6~8時間未満</label>   
                   </div>
                   <div>
                     <img src="img/5-4.png" alt="">
@@ -768,32 +768,57 @@
     </script> -->
     <script>
     function output_result(){
-        $("#msg").html("");
-        var outString = getOutString();
-        if(outString != "")
-        {
-          $.ajax({
-            url : "output_result.php", 
-            type : "GET",
-            data : 'user_data='+outString,
-            beforeSend: function(xhr){
-              $(".loader").css("display", "block");
-              $(".loader-desc").css("display", "block");
-            },
-            error: function(xhr,status,error){
-              $(".loader").css("display", "none");
-              $(".loader-desc").css("display", "none");
-              $("#msg").html("<label class='error'>サーバーとの通信でエラーが発生しました。</label>");
-            },
-            success: function(result){
-              $(".loader").css("display", "none");
-              $(".loader-desc").css("display", "none");
-              $("#msg").html("success");
-              startDiagnosis();
+      $("#msg").html("");
+      var outString = getOutString();
+      if(outString != "")
+      {
+        $.ajax({
+          url : "output_result.php", 
+          type : "GET",
+          data : 'user_data='+outString,
+          beforeSend: function(xhr){
+            $(".loader").css("display", "block");
+            $(".loader-desc").css("display", "block");
+          },
+          error: function(xhr,status,error){
+            $(".loader").css("display", "none");
+            $(".loader-desc").css("display", "none");
+            $("#msg").html("<label class='error'>サーバーとの通信でエラーが発生しました。</label>");
+          },
+          success: function(result){
+            $(".loader").css("display", "none");
+            $(".loader-desc").css("display", "none");
+            $("#msg").html("success");
+            //startDiagnosis();
+
+            var outValue = getOutValue();
+            if(outValue != "")
+            {
+              $.ajax({
+                url : "output_result.php", 
+                type : "GET",
+                data : 'user_data_value='+outValue,
+                beforeSend: function(xhr){
+                  $(".loader").css("display", "block");
+                  $(".loader-desc").css("display", "block");
+                },
+                error: function(xhr,status,error){
+                  $(".loader").css("display", "none");
+                  $(".loader-desc").css("display", "none");
+                  $("#msg").html("<label class='error'>サーバーとの通信でエラーが発生しました。</label>");
+                },
+                success: function(result){
+                  $(".loader").css("display", "none");
+                  $(".loader-desc").css("display", "none");
+                  $("#msg").html("success");
+                  startDiagnosis();
+                }
+              });
             }
-          });
-        }
+          }
+        });
       }
+    }
     </script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 "use strict";
 var max_page = 20;
 var outString = "";
+var outValue = "";
 var strMainSep = "____";
 var strSubSep = "@@@@";
 $(document).ready(function() {
@@ -72,6 +73,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -84,9 +86,11 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strSubSep;
+        outValue += pageValue + strSubSep;
       }
     }
     outString += strMainSep;
+    outValue += strMainSep;
   }
   else if(curPage == 3)
   {
@@ -97,6 +101,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -109,6 +114,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -121,6 +127,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -133,6 +140,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -145,6 +153,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -157,6 +166,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -169,6 +179,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -177,6 +188,7 @@ function testValidate(curPage){
     var ele1 = document.getElementsByName('quiz-name');
     pageValue = ele1[0].value;
     outString += pageValue + strMainSep;
+    outValue += pageValue + strMainSep;
   }
   else if(curPage == 11)
   {
@@ -187,6 +199,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -195,24 +208,28 @@ function testValidate(curPage){
     var ele1 = document.getElementsByName('quiz-old');
     pageValue = ele1[0].value;
     outString += pageValue + strMainSep;
+    outValue += pageValue + strMainSep;
   }
   else if(curPage == 13)
   {
     var ele1 = document.getElementsByName('quiz-length');
     pageValue = ele1[0].value;
     outString += pageValue + strMainSep;
+    outValue += pageValue + strMainSep;
   }
   else if(curPage == 14)
   {
     var ele1 = document.getElementsByName('quiz-weight');
     pageValue = ele1[0].value;
     outString += pageValue + strMainSep;
+    outValue += pageValue + strMainSep;
   }
   else if(curPage == 15)
   {
     var ele1 = document.getElementsByName('quiz-ideal-weight');
     pageValue = ele1[0].value;
     outString += pageValue + strMainSep;
+    outValue += pageValue + strMainSep;
   }
   else if(curPage == 16)
   {
@@ -223,6 +240,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -235,6 +253,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -250,6 +269,7 @@ function testValidate(curPage){
     var ele1 = document.getElementsByName('quiz-medical');
     var temp = ele1[0].value;
     outString += temp + strMainSep;
+    outValue += pageValue + strMainSep;
 }
   else if(curPage == 19)
   {
@@ -263,6 +283,7 @@ function testValidate(curPage){
     var ele1 = document.getElementsByName('quiz-allergy');
     var temp = ele1[0].value;
     outString += temp + strMainSep;
+    outValue += pageValue + strMainSep;
   }
   else if(curPage == 20)
   {
@@ -273,6 +294,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -285,6 +307,7 @@ function testValidate(curPage){
         var eleID = ele1[i].id;
         var labelName = document.getElementsByName(eleID)[0].textContent;
         outString += labelName + strMainSep;
+        outValue += pageValue + strMainSep;
       }
     }
   }
@@ -691,4 +714,19 @@ function getOutString()
     }
   }
   return outString;
+}
+
+function getOutValue()
+{
+  outValue = "";
+  var value = "";
+  for(var i = 1; i <= max_page + 1; i++)
+  {
+    value = testValidate(i);
+    if(value == "")
+    {
+      return "";
+    }
+  }
+  return outValue;
 }
