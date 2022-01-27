@@ -279,17 +279,17 @@
                     <label name="quiz-1-1" for="quiz-1-1">食べない</label>
                   </div>
                   <div>
-                    <img src="img/1-3.png" alt="">
-                    <input class="next-radio" type="radio" id="quiz-1-3" name="quiz-1" value="1">
-                    <label name="quiz-1-3" for="quiz-1-3">週3-5回食べる</label>
-                  </div>
-                </div>
-                <div class="right-content">
-                  <div>
                     <img src="img/1-2.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-1-2" name="quiz-1" value="0.5">
                     <label name="quiz-1-2" for="quiz-1-2">週1-2回食べる</label><br>
                   </div>  
+                </div>
+                <div class="right-content">
+                  <div>
+                    <img src="img/1-3.png" alt="">
+                    <input class="next-radio" type="radio" id="quiz-1-3" name="quiz-1" value="1">
+                    <label name="quiz-1-3" for="quiz-1-3">週3-5回食べる</label>
+                  </div>
                   <div>
                     <img src="img/1-4.png" alt="">
                     <input class="next-radio" type="radio" id="quiz-1-4" name="quiz-1" value="0">
