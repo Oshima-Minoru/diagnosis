@@ -439,6 +439,9 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) and (min-width: 400px) {
+}
+
+@media (max-width: 768px){
   .top-title {
     margin-top: 0;
   }
@@ -472,9 +475,10 @@ textarea {
     width: 50px;
     height: auto;
   }
-}
 
-@media (max-width: 768px){
+  .slick-prev, .slick-next{
+    top: 50%;
+  }
   .slick-prev:before, .slick-next:before {
     color: #0075ff;
     font-size: 50px;
@@ -487,5 +491,15 @@ textarea {
     height: 35px;
     margin-left: 20px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 420px){
+  .top-title {
+    margin-top: 30%;
+  }
+  .top-page img {
+    width: 90%;
+    height: auto;
   }
 }
