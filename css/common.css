@@ -465,11 +465,7 @@ textarea {
   }
   .quiz-title {
     font-size: 16px;
-    text-align: center;
-    margin-top: 30px;
     margin-bottom: 30px;
-    color: #D96D00;
-    padding: 0 50px;
   }
   .quiz-content div div img {
     width: 50px;
