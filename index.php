@@ -364,7 +364,7 @@
                 <div class="right-content">
                   <div>
                     <img src="img/3-2.png" alt="">
-                    <input class="next-radio" type="radio" id="quiz-3-2" name="quiz-3" value="1">
+                    <input class="next-radio" type="radio" id="quiz-3-2" name="quiz-3" value="20">
                     <label name="quiz-3-2" for="quiz-3-2">身体を動かすことが多い</label>    
                   </div>
                 </div>
@@ -378,24 +378,24 @@
                 <div class="left-content">
                   <div>
                     <img src="img/4-1.png" alt="">
-                    <input class="next-radio" type="radio" id="quiz-4-1" name="quiz-4" value="0">
+                    <input class="next-radio" type="radio" id="quiz-4-1" name="quiz-4" value="20">
                     <label name="quiz-4-1" for="quiz-4-1">ほとんど運動をしない</label>    
                   </div>
                   <div>
                     <img src="img/4-2.png" alt="">
-                    <input class="next-radio" type="radio" id="quiz-4-2" name="quiz-4" value="1">
+                    <input class="next-radio" type="radio" id="quiz-4-2" name="quiz-4" value="40">
                     <label name="quiz-4-2" for="quiz-4-2">週1-2回運動する</label>    
                   </div>
                 </div>
                 <div class="right-content">
                 <div>
                     <img src="img/4-3.png" alt="">
-                    <input class="next-radio" type="radio" id="quiz-4-3" name="quiz-4" value="2.5">
+                    <input class="next-radio" type="radio" id="quiz-4-3" name="quiz-4" value="60">
                     <label name="quiz-4-3" for="quiz-4-3">週3-5回運動する</label>    
                   </div>
                   <div>
                     <img src="img/4-4.png" alt="">
-                    <input class="next-radio" type="radio" id="quiz-4-4" name="quiz-4" value="5">
+                    <input class="next-radio" type="radio" id="quiz-4-4" name="quiz-4" value="80">
                     <label name="quiz-4-4" for="quiz-4-4">週6回以上運動する</label>    
                   </div>
                 </div>
