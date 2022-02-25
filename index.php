@@ -717,7 +717,8 @@
             <span class="slider__label sr-only"></span>
           </div>
 
-          <div class="button evaluate-btn" onclick="output_result()">
+          <div class="button evaluate-btn" onclick="startDiagnosis()">
+          <!-- <div class="button evaluate-btn" onclick="output_result()"> -->
             診断結果を確認する
             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 41 41">
               <g id="Group_2" data-name="Group 2" transform="translate(-820.328 -612.328)">
