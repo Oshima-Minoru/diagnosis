@@ -45,6 +45,7 @@ main {
   font-size: 26px;
   right: 2%;
   top: 25%;
+  display: none !important;
 }
 
 
