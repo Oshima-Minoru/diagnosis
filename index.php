@@ -364,7 +364,7 @@
                 <div class="right-content">
                   <div>
                     <img src="img/3-2.png" alt="">
-                    <input class="next-radio" type="radio" id="quiz-3-2" name="quiz-3" value="20">
+                    <input class="next-radio" type="radio" id="quiz-3-2" name="quiz-3" value="1">
                     <label name="quiz-3-2" for="quiz-3-2">身体を動かすことが多い</label>    
                   </div>
                 </div>

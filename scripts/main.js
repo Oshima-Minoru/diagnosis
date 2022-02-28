@@ -583,7 +583,7 @@ function startDiagnosis() {
   }
   
   eval_protain = 100-result;                                      //protain
-  eval_vitamin = (quiz_6 + quiz_7 + quiz_8 + quiz_9) * 25;            //vitamin
+  eval_vitamin = (quiz_6 + quiz_7 + quiz_8 + quiz_9) * 20 + 20;            //vitamin
 
   var temp_bmi;
   if(result_bmi < 18.5)
@@ -596,7 +596,7 @@ function startDiagnosis() {
     temp_bmi = 50;
   eval_gap = temp_bmi - (weight_param/quiz_weight*100);                //GAP
   
-  var param1 = quiz_job * 25;
+  var param1 = quiz_job * 20;
   var param2 = quiz_athletic;
   if(quiz_athletic == 1)
     param2 = 50;
@@ -604,7 +604,7 @@ function startDiagnosis() {
     param2 = 75;
   else if(quiz_athletic == 5)
     param2 = 100;
-  eval_exercise = param1 + param2;
+  eval_exercise = param1 + param2 + 20;
   if(eval_exercise > 100)
     eval_exercise = 100;                                               //athletic
 
